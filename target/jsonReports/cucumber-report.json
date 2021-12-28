@@ -1,0 +1,143 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-26T01:53:48.100Z",
+        "line": 13,
+        "name": ": To post the http request",
+        "description": "",
+        "id": "validation-of-add-place-api;:-to-post-the-http-request;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2269910500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place payload for \"POST\" with \"Frontline house\" \"60\" \"English\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Frontline house\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"60\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.add_place_payload_for_with(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8694367100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"AddPlaceAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2550800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API call is success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinitions.the_API_call_is_success_with_status_code(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36146300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinitions.is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38442300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefinitions.is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of Add Place API",
+    "description": "",
+    "id": "validation-of-add-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placevalidations.feature",
+    "tags": []
+  }
+]
